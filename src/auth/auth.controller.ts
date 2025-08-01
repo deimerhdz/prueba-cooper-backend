@@ -14,12 +14,10 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post('login')
-  @UsePipes(ValidationPipe)
   create(@Body() loginDto: LoginDto) {
     return this.authService.login(loginDto);
   }
   @Post('register')
-  @UsePipes(ValidationPipe)
   findAll(@Body() registerDto: RegisterDto) {
     return this.authService.register(registerDto);
   }
