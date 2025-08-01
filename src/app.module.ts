@@ -20,8 +20,6 @@ import { AuthModule } from './auth/auth.module';
         const port = config.get<string>('MONGO_PORT');
         const db = config.get<string>('MONGO_DB');
         const uri = `mongodb://${user}:${password}@${host}:${port}/${db}?authSource=admin`;
-
-        console.log(uri);
         return { uri };
       },
       inject: [ConfigService],
