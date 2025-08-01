@@ -31,6 +31,25 @@
 $ yarn install
 ```
 
+## 🔐 Variables de Entorno
+
+Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido y asignales sus correspondientes valores:
+
+```env
+MONGO_USER=
+MONGO_PASSWORD=
+MONGO_HOST=
+MONGO_PORT=
+MONGO_DB=
+JWT_SECRET=
+```
+
+En la raíz del proyecto, ejecuta:
+
+```env
+docker-compose up -d
+```
+
 ## Compile and run the project
 
 ```bash
